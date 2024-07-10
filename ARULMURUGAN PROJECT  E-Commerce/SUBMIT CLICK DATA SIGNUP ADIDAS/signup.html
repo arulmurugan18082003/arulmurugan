@@ -1,0 +1,164 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		
+		
+		
+		
+		
+    <title>Sign-up page</title>
+   
+    <style>
+        * {
+            font-family: "AdihausDIN", Helvetica, Arial, sans-serif;
+        }
+        
+        body {
+            margin: 0%;
+        }
+        
+        #topHeader {
+            display: flex;
+            background-color: black;
+            color: white;
+            height: 30px;
+            flex-grow: 0px;
+            overflow: hidden;
+        }
+        
+        #topHeader div {
+            margin: 0.5% 0% 0% 15%;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        
+        #header {
+            display: flex;
+            height: 80px;
+            border-bottom: 1px solid #eaebec;
+            overflow: hidden;
+        }
+        
+        .adidasLogo {
+            width: 70px;
+            margin-top: 15px;
+            margin-left: 50px;
+            cursor: pointer;
+        }
+        
+        .hearderSlideContent {
+            margin: 10px auto;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: white;
+        }
+        
+        #n,
+        #e,
+        #m,
+        #p {
+            width: 94%;
+            height: 40px;
+            margin: 7px;
+        }
+        
+        #submit {
+            text-align: center;
+            margin: 20px 2px;
+            height: 60px;
+            width: 30%;
+            border: none;
+            border-radius: 4px;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            box-shadow: 10px 5px 5px grey;
+        }
+        
+        #submit:hover {
+            cursor: pointer;
+        }
+        
+        .inputBoxDesign {
+            border: 1px solid black;
+            font-size: 16px;
+            padding: 3px 10px;
+        }
+        
+        .mainBox {
+            max-width: 50%;
+            margin: auto;
+            height: 100%;
+            padding: 4px;
+        }
+        
+        .red {
+            color: red;
+        }
+        
+        @media(max-width:960px) {
+            .mainBox {
+                max-width: 80%;
+            }
+            #topHeader>div {
+                display: none;
+            }
+        }
+        
+        @media(max-width:600px) {
+            .mainBox {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="topHeader">
+        <div>FREE DELIVERY FOR ALL ORDERS NOW</div>
+        <div>FREE RETURNS</div>
+        <div>SIGN UP & GET 15% OFF</div>
+    </div>
+
+    <div id="header">
+        <div>
+            <img class="adidasLogo" src="C:\Users\Murugan\Documents\images\Adidas_Logo.png">
+        </div>
+    </div>
+
+    <div class="mainBox">
+        <h1>CREATE YOUR ACCOUNT</h1>
+        <p>Sign up now and get 15% off your first order.</p>
+        <form id="myform" onsubmit="signup(event)">
+            <table>
+                <input type="text" id="n" class="inputBoxDesign" placeholder="enter your name" required>
+                <span id="username" class="red"></span>
+
+                <input type="text" id="e" class="inputBoxDesign" placeholder="enter your email *" required>
+                <span id="email" class="red"></span>
+
+                <input type="number" id="m" class="inputBoxDesign" placeholder="mobile *">
+                <span id="mobile" class="red"></span>
+
+                <input type="password" id="p" class="inputBoxDesign" placeholder="enter your password *" required>
+                <span id="password" class="red"></span>
+
+                <input type="submit" value="REGISTER &emsp; &#8594;" id="submit" name="submit" />
+            </table>
+        </form>
+    </div>
+
+
+
+
+</body>
+
+</html>
